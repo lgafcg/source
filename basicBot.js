@@ -250,7 +250,7 @@
         name: 'basicBot',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/lgafcg/source/master/basicBot.js',
-        cmdLink: 'http://git.io/245Ppg',
+        cmdLink: 'https://git.io/fjZUF',
         chatLink: 'https://raw.githack.com/lgafcg/source/master/lang/ru.json',
         chat: null,
         loadChat: loadChat,
