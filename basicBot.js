@@ -1035,7 +1035,7 @@
             var newMedia = obj.media;
             clearTimeout(basicBot.room.tgSkip);
             var timeLimitSkip = setTimeout(function() {
-                if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
+                if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 * 1000 && !basicBot.room.roomevent) {
                     if (typeof basicBot.settings.strictTimeGuard === 'undefined' || basicBot.settings.strictTimeGuard) {
                         var name = obj.dj.username;
                         API.sendChat(subChat(basicBot.chat.timelimit, {
