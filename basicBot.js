@@ -257,7 +257,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'lgafcg',
+            botName: 'Недобот',
             language: 'russian',
             chatLink: 'https://raw.githack.com/lgafcg/source/master/lang/ru.json',
             scriptLink: 'https://raw.githack.com/lgafcg/source/master/basicBot.js',
@@ -266,7 +266,7 @@
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             autowoot: false,
-            autoskip: false,
+            autoskip: true,
             smartSkip: false,
             cmdDeletion: true,
             maximumAfk: 120,
@@ -279,11 +279,11 @@
             maximumLocktime: 10,
             cycleGuard: false,
             maximumCycletime: 10,
-            voteSkip: false,
+            voteSkip: true,
             voteSkipLimit: 17,
-            historySkip: false,
-            timeGuard: false,
-            strictTimeGuard: false,
+            historySkip: true,
+            timeGuard: true,
+            strictTimeGuard: true,
             maximumSongLength: 10,
             autodisable: false,
             commandCooldown: 50,
