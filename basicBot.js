@@ -112,7 +112,7 @@
 
     var loadChat = function(cb) {
         if (!cb) cb = function() {};
-        $.get('https://raw.githack.com/basicBot/source/master/lang/langIndex.json', function(json) {
+        $.get('https://raw.githack.com/lgafcg/source/master/lang/langIndex.json', function(json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== 'undefined') {
                 langIndex = json;
@@ -249,9 +249,9 @@
         status: false,
         name: 'basicBot',
         loggedInID: null,
-        scriptLink: 'https://raw.githack.com/basicBot/source/master/basicBot.js',
+        scriptLink: 'https://raw.githack.com/lgafcg/source/master/basicBot.js',
         cmdLink: 'http://git.io/245Ppg',
-        chatLink: 'https://raw.githack.com/basicBot/source/master/lang/en.json',
+        chatLink: 'https://raw.githack.com/lgafcg/source/master/lang/ru.json',
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -259,8 +259,8 @@
         settings: {
             botName: 'basicBot',
             language: 'english',
-            chatLink: 'https://raw.githack.com/basicBot/source/master/lang/en.json',
-            scriptLink: 'https://raw.githack.com/basicBot/source/master/basicBot.js',
+            chatLink: 'https://raw.githack.com/lgafcg/source/master/lang/ru.json',
+            scriptLink: 'https://raw.githack.com/lgafcg/source/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -319,9 +319,9 @@
             songstats: true,
             commandLiteral: '!',
             blacklists: {
-                NSFW: 'https://raw.githack.com/basicBot/custom/master/blacklists/NSFWlist.json',
-                OP: 'https://raw.githack.com/basicBot/custom/master/blacklists/OPlist.json',
-                BANNED: 'https://raw.githack.com/basicBot/custom/master/blacklists/BANNEDlist.json'
+                NSFW: 'https://raw.githack.com/lgafcg/custom/master/blacklists/NSFWlist.json',
+                OP: 'https://raw.githack.com/lgafcg/custom/master/blacklists/OPlist.json',
+                BANNED: 'https://raw.githack.com/lgafcg/custom/master/blacklists/BANNEDlist.json'
             }
         },
         room: {
@@ -2744,12 +2744,12 @@
                         }));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get('https://raw.githack.com/basicBot/source/master/lang/langIndex.json', function(json) {
+                        $.get('https://raw.githack.com/lgafcg/source/master/lang/langIndex.json', function(json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === 'undefined') {
                                 API.sendChat(subChat(basicBot.chat.langerror, {
-                                    link: 'http://git.io/vJ9nI'
+                                    link: 'https://raw.githack.com/lgafcg/source/master/lang/langIndex.json'
                                 }));
                             } else {
                                 basicBot.settings.language = argument;
@@ -4126,7 +4126,9 @@
                                 var joined = rawjoined.substr(0, 10);
                                 var rawlang = API.getUser(id).language;
 
-                                if (rawlang == 'en') {
+                                if (rawlang == 'ru') {
+                                    var language = 'Russian';
+                                } else if (rawlang == 'en') {
                                     var language = 'English';
                                 } else if (rawlang == 'bg') {
                                     var language = 'Bulgarian';
