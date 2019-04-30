@@ -174,7 +174,7 @@
     "usedskip": "\/me [%%NAME%% скипнул]",
     "skippos": "\/me [@%%NAME%%] Теперь скипнутые переходят в позицию %%POSITION%%.",
     "lockguardtime": "\/me [@%%NAME%%] время lockguard — %%TIME%% ",
-    "maxlengthtime": "\/me [@%%NAME%%] максимальная длина трека - %%MAXLENGTH%% минут.",
+    "maxlengthtime": "\/me [@%%NAME%%] максимальная длина трека - %%TIME%% минут.",
     "motdset": "\/me MotD set to:  %%MSG%%",
     "motdintervalset": "\/me MotD interval set to %%INTERVAL%%.",
     "currentbotname": "\/me Я есть %%BOTNAME%%",
