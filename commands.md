@@ -1,120 +1,120 @@
-# Commands List
+# Список команд для бота
 
-- **X** specifies a number
-- Arguments between **( )** are optional
+- **X** означает число
+- Аргументы в скобках необязательны
 
-### Manager
+### Manager (если ты манагер)
 
-| Command | Arguments | Description |
+| Команда | Аргументы | Описание |
 |:-------:|:---------:|:-----------:|
-| !afklimit | X | sets the maximum AFK time. |
-| !botname | (botname) | change the default bot name. |
-| !bouncer+ | — | toggle bouncer+. |
-| !clearchat | — | clears the chat. |
-| !clearlocalstorage | — | clears basicBot data stored on the browser. |
-| !cycle | — | toggle DJ cycle. |
-| !cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled. |
-| !language | (language) | specify the language you would like the bot to use. |
-| !locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled. |
-| !logout | — | logs out account bot is hosted on. |
-| !maxlength | X | specify the maximum length a song can be when timeguard is enabled. |
-| !refresh | — | refreshes the browser of whoever runs the bot. |
-| !skippos | X | set the position to which skip and lockskip moves the dj. |
-| !usercmdcd | X | set the cooldown on commands by grey users. |
-| !usercommands | — | toggle user commands. |
-| !voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit. |
+| !afklimit | X | лимит времени AFK, пока юзера не напнут |
+| !botname | (botname) | поменять дефолтное имя ботяры |
+| !bouncer+ | — | вкл./выкл. bouncer+ |
+| !clearchat | — | потереть чат |
+| !clearlocalstorage | — | очистить данные бота в браузере |
+| !cycle | — | вкл./выкл. круговорот диджеев |
+| !cycletimer | X | установить максимальную длительность круговорота диджеев, когда включен т.н. cycleguard |
+| !language | (language) | поменять язык бота |
+| !locktimer | X | установить максимальное время, на которое блокируется список ожидания, когда включен т.н. lockguard |
+| !logout | — | выйти из аккаунта, на котором крутится бот |
+| !maxlength | X | указать максимальную длительность песни, когда включен т.н. timeguard |
+| !refresh | — | рефреш в браузере, на котором крутится бот |
+| !skippos | X | номер позиции, куда скипнутого диджея перекидывает, если включены т.н. skip и lockskip |
+| !usercmdcd | X | установить длительность кулдауна команд для серых юзеров |
+| !usercommands | — | вкл./выкл. для команд серых юзеров |
+| !voteskip | (X) | при использовании без аргумента отображает текущее значение для скипа по мехам, при указании численного аргумента X устанавливается новое значение |
 
-### Bouncer+
+### Bouncer+ (если вышибалам дали поиграться)
 
-| Command | Arguments | Description |
+| Команда | Аргументы | Описание |
 |:-------:|:---------:|:-----------:|
-| !add | @user | add user to the waitlist. |
-| !afkremoval | — | toggles the AFK check. |
-| !autoskip | — | skips songs automatically when they're done (use when the circles-bug happens). |
-| !deletechat | @user | delete all the chats by a certain user. |
-| !lock | — | lock the waitlist. |
-| !lockdown | — | lock down the room: only staff can chat. |
-| !meh | — | makes the bot meh the current song. |
-| !move | @user (X) | moves user to position X on the waitlist, default is position 1. |
-| !remove | @user | remove user from the waitlist. |
-| !roulette | — | start a roulette. |
-| !songstats | — | toggle song statistics. |
-| !swap | @user1 @user2 | swaps the position of two users in the waitlist. |
-| !unlock | — | unlock the waitlist. |
-| !welcome | — | toggle the welcome message on user join. |
-| !woot | — | makes the bot woot the current song. |
+| !add | @user | добавить юзера в список ожидания |
+| !afkremoval | — | вкл./выкл. проверку на AFK |
+| !autoskip | — | скипать песни по их завершению (на случай бага в долбанном плаге, когда следующий диджей никак не запускается в конце предыдущей песни) |
+| !deletechat | @user | удалить все реплики указанного юзера (ты Сталин штоле?) |
+| !lock | — | заблокировать список ожидания |
+| !lockdown | — | заблокировать чат для серых юзеров (не ну реально Сталиным надо быть) |
+| !meh | — | заставить бота мехнуть песню |
+| !move | @user (X) | перекинуть юзера на позицию X в списке ожидания; по умолчанию на первую |
+| !remove | @user | убрать юзера из списка ожидания |
+| !roulette | — | запустить рулетку; за абьюз бот будет вырубаться нахуй |
+| !songstats | — | вкл./выкл. показывать в чате статистику лайков/дислайков/грабов в конце песни |
+| !swap | @user1 @user2 | поменять двух юзеров местами в списке ожидания |
+| !unlock | — | разблокировать список ожидания |
+| !welcome | — | вкл./выкл. приветствие всем входящим в хату |
+| !woot | — | заставить бота лайкнуть песню |
 
-### Bouncer
+### Bouncer (если ты вышибала)
 
-| Command | Arguments | Description |
+| Команда | Аргументы | Описание |
 |:-------:|:---------:|:-----------:|
-| !active | (X) | shows how many users chatted in the past X minutes. If no X specified, 60 is set as default. |
-| !afkreset | @user | resets the AFK time of user. |
-| !afktime | @user | shows how long user has been AFK. |
-| !autodisable | — | toggle the autodisable. |
-| !ban | @user | bans user for 1 day. |
-| !blacklist / !bl | blacklistname | add the song to the specified blacklist. |
-| !blinfo | — | get information required to blacklist a song. |
-| !commanddeletion / !cmddeletion / !cmddel | — | toggles if bot commands gets deleted. |
-| !cycleguard | — | toggles the cycleguard. |
-| !dclookup / !dc | (@user) | do dclookup on a user. |
-| !english | @user | ask user to speak english (asked in the language they set plug to). |
-| !eta | (@user) | shows when user will reach the booth. |
-| !filter | — | toggles the chat filter. |
-| !forceskip / !fs | — | forceskips the current song. |
-| !historyskip | — | toggles the history skip. |
-| !jointime | @user | shows how long the user has been in the room. |
-| !kick | (X) | kicks user for X minutes, default is 0.25 minutes (15 seconds). |
-| !kill | — | shut down the bot. |
-| !lockguard | — | toggle the lockguard. |
-| !lockskip | (reason) | skips, locks and moves the dj back up (the position can be set with `!skippos)`. |
-| !motd | (X)/(message) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message. |
-| !mute | @user/(X) | mute user, for X minutes if X is specified, otherwise for an undefined period. |
-| !reload | — | reload the bot. |
-| !restricteta | — | toggles the restriction on eta: grey users can use it once an hour. |
-| !sessionstats | — | display stats for the current session. |
-| !skip / !smartskip | (reason) | skips the dj using smartskip. actions such as locking and moving user depends on various factors (the position the dj is moved to can be set with `!skippos`). |
-| !status | — | display the bot's status and some settings. |
-| !timeguard | — | toggle the timeguard. |
-| !togglebl | — | toggle the blacklist. |
-| !togglemotd | — | toggle the motd. |
-| !togglevoteskip | — | toggle the voteskip. |
-| !unban | @user | unban user. |
-| !unmute | @user/all | unmute user. |
-| !uptime | — | displays how long the bot has been running. |
-| !voteratio | @user | display the vote statistic for a user. |
-| !whois | @user | returns plug related information about user. |
+| !active | (X) | показать, сколько человек писали в чате за последние X минут; по умолчанию за 60 |
+| !afkreset | @user | обнулить таймер AFK для юзера |
+| !afktime | @user | показать, как давно юзер AFK |
+| !autodisable | — | вкл./выкл. т.н. autodisable. |
+| !ban | @user | забанить юзера на 1 день |
+| !blacklist / !bl | название черного списка | добавить песню в указанный черный список (которого все равно пока нет) |
+| !blinfo | — | получить нужную информацию для занесения песни в черный список |
+| !commanddeletion / !cmddeletion / !cmddel | — | вкл./выкл. удаление команд бота |
+| !cycleguard | — | вкл./выкл. т.н. cycleguard |
+| !dclookup / !dc | (@user) | посмотреть, не свалил ли юзер |
+| !english | @user | попросить юзера говорить по-ангельски |
+| !eta | (@user) | показывает, через сколько времени юзер будет у пульта |
+| !filter | — | вкл./выкл. фильтр чата |
+| !forceskip / !fs | — | насильственно скипает песню |
+| !historyskip | — | вкл./выкл. скип по истории сыгранных песен |
+| !jointime | @user | показывает, как долго юзер находится в комнате |
+| !kick | (X) | кикает юзера на X минут; по умолчанию на 0.25 минут (15 секунд (еще бы в днях выразил)). |
+| !kill | — | вырубить бота |
+| !lockguard | — | вкл./выкл. т.н. lockguard |
+| !lockskip | (reason) | скипает, блокирует список ожидания (?) и ставит диджея на позицию, которую можно указать по команде  `!skippos)` |
+| !motd | (X)/(сообщение) | без указания аргумента пишет в чате сообщение дня; при указании X постит сообщение каждые X песен; при указании "сообщения" заменяет им старое |
+| !mute | @user/(X) | заткнуть юзера на X минут если X указан, иначе — на неопределенный период |
+| !reload | — | перезагрузить бота |
+| !restricteta | — | вкл./выкл. ограничение на команду eta, чтобы серые юзеры не могли использовать ее чаще раза в час |
+| !sessionstats | — | показать статистику текущей сессии бота |
+| !skip / !smartskip | (reason) | скипает юзера по технологии smartskip. такие действия, как блокировка и перемещение юзера по списку ожидания, зависят от различных факторов (позиция, на которую двигается диджей ставится командой `!skippos`). |
+| !status | — | показать статус бота и кое-что еще |
+| !timeguard | — | вкл./выкл. т.н. timeguard |
+| !togglebl | — | вкл./выкл. черный список (которого все равно нет) |
+| !togglemotd | — | вкл./выкл. сообщение дня |
+| !togglevoteskip | — | вкл./выкл. скип по количеству мехов |
+| !unban | @user | разбанить юзера |
+| !unmute | @user/all | разоткнуть пользователя |
+| !uptime | — | показать, как давно крутится бот |
+| !voteratio | @user | показать статистику голосования пользователя |
+| !whois | @user | досье на юзера |
 
-### Resident DJ
+### Resident DJ (если ты местный воротила пластинок)
 
-| Command | Arguments | Description |
+| Команда | Аргументы | Описание |
 |:-------:|:---------:|:-----------:|
-| !link | — | give a link to the current song. |
+| !link | — | дать ссылку на песню |
 
-### User
+### User (если ты серый юзер)
 
-| Command | Arguments | Description |
+| Команда | Аргументы | Описание |
 |:-------:|:---------:|:-----------:|
-| !8ball / !ask | (message) | ask the bot a question, the bot will return random variations of a yes or no answer. |
-| !autowoot | — | links to PlugCubed, the advised script/plugin to use for autowooting. |
-| !ba | — | explains the Brand Ambassador rank. |
-| !commands | — | gives a link to the commands. |
-| !cookie | (@user) | give a cookie to user. |
-| !dclookup / !dc | — | use dclookup on yourself. |
-| !emoji | — | returns a link the emoji list. |
-| !eta | — | shows how long before you will reach the booth. |
-| !fb | — | links to the room's Facebook page (if set in the settings). |
-| !ghostbuster | @user | checks if user is ghosting. |
-| !gif / !giphy | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
-| !help | — | links to an image to help get people started on plug. |
-| !join | — | join the roulette if it's up. |
-| !leave | — | leave the roulette if you joined. |
-| !link | — | when the user is the DJ, give a link to the current song. |
-| !op | — | links to the OverPlayed list (if set in the settings). |
-| !ping | — | returns pong! |
-| !rules | — | links to the rules (if set in the settings). |
-| !source | — | returns a link to the basicBot repository on GitHub. |
-| !theme | — | links to the room's theme (if set in the settings). |
-| !thor | — | users get moved to position 1 in the waitlist if they're worthy of Thor's hammer. |
-| !website | — | links to the room's website (if set in the settings). |
-| !youtube | — | links to the room's youtube page (if set in the settings). |
+| !8ball / !ask | (твой вопрос) | узнать ответ на вопросы на да и нет в духе сакрального оленя |
+| !autowoot | — | реклама PlugCubed; не забывай, анон, что есть еще RCS |
+| !ba | — | реклама понятия Brand Ambassador |
+| !commands | — | дать ссылку на список команд |
+| !cookie | (@user) | дать юзеру печеньку |
+| !dclookup / !dc | — | посмотреться |
+| !emoji | — | ссылка на список этих ваших эмодзи |
+| !eta | — | показать, сколько тебе осталось до пяти минут славы |
+| !fb | — | ссылка на страничку румы на цукербуке (которой все равно нет) |
+| !ghostbuster | @user | проверить, не занимается ли юзер непотребством |
+| !gif / !giphy | (тег) | показать гифку по указанному тегу; по умолчанию гифка рандомная |
+| !help | — | ссылка на помощь новичку |
+| !join | — | крутануть рулеточку |
+| !leave | — | выйти из рулетки, если ты зассал |
+| !link | — | дать ссылку на свою песню, если ты играешь |
+| !op | — | дать ссылку на список слишком частых песен |
+| !ping | — | ты ему ТЫЩ, а он такой... |
+| !rules | — | дать ссылку на правила (которых нет все равно; читай лучше в самой руме и спроси анонов) |
+| !source | — | дать ссылку на оригинал репозитория бота |
+| !theme | — | дать ссылку на тему румы (хз вообще, че это такое) |
+| !thor | — | встать на 1 место в списке ожидания, если ты достоин молота Тора |
+| !website | — | ссылка на сайт румы (ояебу, ты и так на сайте румы) |
+| !youtube | — | ссылка на ютуб-канал румы (нет его (пока)) |
