@@ -247,7 +247,7 @@
     var basicBot = {
         version: '2.12.3',
         status: false,
-        name: 'basicBot',
+        name: 'недобот',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/lgafcg/source/master/basicBot.js',
         cmdLink: 'https://git.io/fjZUF',
@@ -266,7 +266,7 @@
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             autowoot: false,
-            autoskip: true,
+            autoskip: false,
             smartSkip: false,
             cmdDeletion: true,
             maximumAfk: 120,
@@ -279,9 +279,9 @@
             maximumLocktime: 10,
             cycleGuard: false,
             maximumCycletime: 10,
-            voteSkip: true,
+            voteSkip: false,
             voteSkipLimit: 17,
-            historySkip: true,
+            historySkip: false,
             timeGuard: true,
             strictTimeGuard: false,
             maximumSongLength: 10,
@@ -304,7 +304,7 @@
             afkRankCheck: 'user',
             motdEnabled: true,
             motdInterval: 47,
-            motd: 'frag4mi благословил этот трек.',
+            motd: 'frag4mi благословил этот трек',
             filterChat: false,
             etaRestriction: false,
             welcome: false,
@@ -316,7 +316,7 @@
             website: null,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: '!',
             blacklists: {
                 NSFW: 'https://raw.githack.com/lgafcg/custom/master/blacklists/NSFWlist.json',
@@ -3466,7 +3466,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void(0);
                     else {
-                        API.sendChat('/me basicBot is an open-source bot for plug.dj. More info can be found here: https://github.com/basicBot/source');
+                        API.sendChat('/me недобот основан на капиталистическом опенсурсном BasicBot: https://github.com/basicBot/source');
                     }
                 }
             },
