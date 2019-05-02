@@ -303,7 +303,7 @@
             afkpositionCheck: 17,
             afkRankCheck: 'user',
             motdEnabled: true,
-            motdInterval: 47,
+            motdInterval: 17,
             motd: 'frag4mi благословил этот трек',
             filterChat: false,
             etaRestriction: false,
