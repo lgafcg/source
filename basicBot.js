@@ -289,7 +289,7 @@
             commandCooldown: 50,
             usercommandsEnabled: true,
             thorCommand: true,
-            thorCooldown: 99,
+            thorCooldown: 17,
             skipPosition: 3,
             skipReasons: [
                 ['theme', 'This song does not fit the room theme. '],
