@@ -1059,7 +1059,7 @@
             var cid = obj.media.cid;
             var naSkip = setTimeout(function() {
                 if (format == 1) {
-                    $.getJSON('https://www.googleapis.com/youtube/v3/videos?id=' + cid + '&key=AIzaSyDnkB8EMDfQvsYuV-o2j7nG2V2yGqSuL_U&part=snippet&callback=?', function(track) {
+                    $.getJSON('https://www.googleapis.com/youtube/v3/videos?id=' + cid + '&key=AIzaSyDcfWu9cGaDnTjPKhg_dy9mUh6H7i4ePZ0&part=snippet&callback=?', function(track) {
                         if (typeof(track.items[0]) === 'undefined') {
                             var name = obj.dj.username;
                             API.sendChat(subChat(basicBot.chat.notavailable, {
